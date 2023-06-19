@@ -8,7 +8,7 @@ def header_list():
         header=data.readline()
         coloumn=header.split(';')
         headers = []
-        for element in coloumn:
+        for element in coloumn:        # Remove the leading and following double quote
             element = element[1:]
             element = element[:-1]
             headers.append(element)
@@ -17,7 +17,7 @@ def coloumn():
     print("The coloumn in the given csv file is:")
     lst=header_list()
     for i in lst:
-        print(f'>>>>   {i:^29}  ')
+        print(f'>>>>   {i:^29}  ')     # to print coloumns from given data
 
 
 def category():
@@ -27,7 +27,7 @@ def category():
     lst0=content()
     for i in lst0:
        coloumn=i.split(';') 
-       for j in coloumn:
+       for j in coloumn:         #nested if to access the element in csv in a particular line
            if j=='"married"':
                married=married+1
            elif j=='"single"':
@@ -57,7 +57,7 @@ def age_bins():
         k=int(j)
         real.append(k)
     sum=0
-    hist=[0,0,0,0,0,0,0,0,0,0]
+    hist=[0,0,0,0,0,0,0,0,0,0]     # to count the age limit within a particular age bin
     for i in real:
         if i>0 and i<=10:
             hist[0] = hist[0]+1 
@@ -94,7 +94,7 @@ def age_bins():
         if i>1200:
             lst.append("***************")
 
-    for item,range in zip(lst,ranges):
+    for item,range in zip(lst,ranges):      #to dispplay two wlwmwnts simultaniously
         print(range,item)
     print("\nDown  is mentioned the age with number that lies in respective bins\n")
     for item,range in zip(hist,ranges):
