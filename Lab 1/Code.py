@@ -106,6 +106,8 @@ def age_bins():
 #
 print("To view data enter:  'view'\nTo view coloumns enter:  'coloumns'\nTo view martial status enter:  'marriage'\n To view histogram enter:  'graph'")
 user=input("Enter your input:")
+
+    
 if user=="view":
     print(content())
 if user=="coloumn":
@@ -114,3 +116,11 @@ if user=="marriage":
     print(martial_status())
 elif user=="graph":
     print(age_bins())
+else:
+    print("Wrong input")
+        
+    
+
+    
+
+
