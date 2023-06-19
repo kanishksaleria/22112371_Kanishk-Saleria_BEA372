@@ -1,5 +1,5 @@
 # 22112371_Kanishk-Saleria_BEA372
- Labwork
+
 ## Lab 1
 
 ### Introduction
@@ -32,9 +32,11 @@ This lab is about working with a given dataset of a bank (bank.csv) and performi
 3. Run the following command to execute the program:
 
 ![Alt text](image.png)
+
 4. The program will display a menu with the following options:
 
 ![Alt text](image-1.png)
+
 5. Select an option by entering its corresponding keyword and pressing Enter.
 
 
